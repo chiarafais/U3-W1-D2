@@ -9,8 +9,8 @@ class AllTheBooks extends Component {
           <Row>
             {books.map((book) => {
               return (
-                <Col xs={12} sm={6} md={4} xl={3} className="text-center">
-                  <Card style={{ width: "270px", height: "600px" }} key={book.asin} className="mt-5">
+                <Col xs={12} sm={6} md={4} xl={3} className="text-center" key={book.asin}>
+                  <Card style={{ width: "270px", height: "600px" }} className="mt-5">
                     <Card.Img variant="top" src={book.img} />
                     <Card.Body>
                       <Card.Title>{book.title}</Card.Title>
